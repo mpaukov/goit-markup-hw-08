@@ -1,0 +1,35 @@
+.clients__heading {
+  @extend %heading;
+  margin-bottom: 30px;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__list {
+  width: calc(100% / 2 - 30px);
+  margin: 15px;
+}
+
+.clients__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 210px;
+  height: 92px;
+
+  border: 1px solid $social-passive-color;
+  border-radius: 4px;
+
+  color: $social-passive-color;
+  transition: color $duration $function, border $duration $function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
+}
