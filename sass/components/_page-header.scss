@@ -1,0 +1,11 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: $current-light-color;
+  border-bottom: 1px solid $line-color;
+  z-index: 2;
+}

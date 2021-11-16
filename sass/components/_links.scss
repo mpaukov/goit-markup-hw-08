@@ -1,0 +1,42 @@
+.link__navigation {
+  @include link(40px, 1.18);
+  display: block;
+  padding: 25px 16px;
+
+  color: $current-title-color;
+  @include transition(color, $duration, $function);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.current {
+  color: $accent-color;
+}
+
+.contacts {
+  margin-bottom: 40px;
+}
+
+.link__contacts {
+  @include link(40px, 1.18);
+  display: block;
+
+  padding: 25px 16px;
+
+  color: $current-text-color;
+  @include transition(color, $duration, $function);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.link__social {
+  @include link(18px, 1.22);
+  color: $accent-color;
+  padding: 10px;
+}

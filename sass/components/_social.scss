@@ -1,0 +1,12 @@
+.social__items {
+  display: flex;
+  padding-left: 10px;
+}
+
+.social__item {
+  &:not(:last-child)::after {
+    content: '';
+
+    border-right: 1px solid $line-social-color;
+  }
+}
