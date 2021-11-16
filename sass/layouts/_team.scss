@@ -1,0 +1,37 @@
+.team__heading {
+  @extend %heading;
+}
+
+.team__card {
+  background-color: $current-light-color;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team__card-thumb {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__card-title {
+  margin: 0 0 10px 0;
+
+  color: $current-title-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team__card-text {
+  margin: 0 0 16px 0;
+  padding: 0;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
