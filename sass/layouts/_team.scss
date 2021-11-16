@@ -4,6 +4,8 @@
 
 .team__card {
   background-color: $current-light-color;
+  max-width: 450px;
+  margin: 0 auto;
 
   &:not(:last-child) {
     margin-bottom: 30px;

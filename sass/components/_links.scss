@@ -17,14 +17,14 @@
 }
 
 .contacts {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .link__contacts {
-  @include link(40px, 1.18);
+  @include link(34px, 1.18);
   display: block;
 
-  padding: 25px 16px;
+  padding: 16px 16px;
 
   color: $current-text-color;
   @include transition(color, $duration, $function);
@@ -32,6 +32,10 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  &.mail {
+    @include link(24px, 1.17);
   }
 }
 
