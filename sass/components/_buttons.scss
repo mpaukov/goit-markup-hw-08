@@ -1,0 +1,74 @@
+%button__menu {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.button__menu-open {
+  @extend %button__menu;
+}
+
+.button__menu-close {
+  @extend %button__menu;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+%button {
+  cursor: pointer;
+  min-height: 38px;
+
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: $current-title-color;
+  background-color: $thumb-background-color;
+  box-shadow: none;
+
+  border: 0;
+  border-radius: 4px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+}
+
+.button__hero {
+  @extend %button;
+
+  width: 200px;
+  height: 50px;
+
+  color: $current-light-color;
+  background-color: $accent-color;
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: $minor-accent-color;
+  }
+}
