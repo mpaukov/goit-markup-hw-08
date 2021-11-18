@@ -46,7 +46,7 @@
   right: 15px;
 }
 
-.button__hero, .button__send {
+.button__hero, .button__send, .button__filter {
   cursor: pointer;
   min-height: 38px;
   padding: 6px 22px;
@@ -136,6 +136,13 @@
 
 .button__modal:focus, .button__modal:hover {
   color: #2196f3;
+}
+
+.button__filter:hover, .button__filter:focus, .button__filter.is-active {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -323,7 +330,7 @@
   color: #2196f3;
 }
 
-.current {
+.is-current {
   color: #2196f3;
 }
 
@@ -908,5 +915,30 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter__item {
+  margin-bottom: 15px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=main.css.map */
