@@ -693,7 +693,7 @@ body {
   text-align: center;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 90%;
+  width: auto;
   height: auto;
   padding: 40px;
   background: #ffffff;
