@@ -27,6 +27,17 @@
 
   width: auto;
   height: auto;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+  }
+
   padding: 40px;
 
   background: $current-light-color;

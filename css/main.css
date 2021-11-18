@@ -711,6 +711,20 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .is-hidden > .modal {
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
