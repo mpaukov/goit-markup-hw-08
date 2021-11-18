@@ -20,6 +20,7 @@
 
 .envelope {
   @include icon(16px, 12px);
+  margin-right: 8px;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -28,6 +29,7 @@
 
 .smartphone {
   @include icon(10px, 16px);
+  margin-right: 8px;
 
   @media screen and (max-width: 767px) {
     display: none;

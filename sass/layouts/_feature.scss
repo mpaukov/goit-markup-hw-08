@@ -1,6 +1,21 @@
+.feature__items {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .feature__item {
+  text-align: center;
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+    text-align: left;
   }
 }
 
@@ -23,7 +38,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
 
   color: $current-title-color;
 }

@@ -1,11 +1,21 @@
+.portfolio {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .portfolio-card {
   background-color: $current-light-color;
   box-shadow: none;
 
   transition: box-shadow $duration $function;
 
-  :not(:last-child) {
-    margin-top: 30px;
+  @media screen and(max-width:767px) {
+    :not(:last-child) {
+      margin-top: 30px;
+    }
   }
 
   &:hover,
@@ -13,6 +23,11 @@
   &:focus-within {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     border-radius: 0px 0px 4px 4px;
+  }
+
+  @media screen and(min-width:768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
   }
 }
 

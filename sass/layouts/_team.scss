@@ -2,13 +2,28 @@
   @extend %heading;
 }
 
+.team__cards {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .team__card {
   background-color: $current-light-color;
   max-width: 450px;
   margin: 0 auto;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
   }
 }
 
