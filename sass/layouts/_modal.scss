@@ -25,8 +25,8 @@
 
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 450px;
-  min-height: 609px;
+  max-width: 450px;
+  max-height: 609px;
   padding: 40px;
 
   background: $current-light-color;
@@ -50,7 +50,7 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
