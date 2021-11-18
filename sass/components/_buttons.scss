@@ -75,8 +75,9 @@
 
 .button__send {
   @extend %button;
-
-  display: inline-flex;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
   justify-content: center;
   min-width: 200px;

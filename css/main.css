@@ -91,9 +91,11 @@
 }
 
 .button__send {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -441,8 +443,8 @@ body {
 }
 
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section.hero {
@@ -452,10 +454,6 @@ body {
 .section-team {
   background-color: #f5f4fa;
   text-align: center;
-}
-
-.section:last-of-type {
-  padding-bottom: 60px;
 }
 
 .container {
