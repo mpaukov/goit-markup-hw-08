@@ -1,6 +1,10 @@
 .social__menu {
   display: flex;
   padding-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .social__menu-item {

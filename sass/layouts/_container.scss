@@ -19,22 +19,10 @@
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
-}
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 32px 15px;
-  background-color: $current-light-color;
-  z-index: 999;
-
-  transform: translateX(100%);
-  @include transition(transform, 250ms, ease-in-out);
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
+  .page-header & {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
 }

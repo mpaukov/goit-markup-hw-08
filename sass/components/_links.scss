@@ -6,6 +6,11 @@
   color: $current-title-color;
   @include transition(color, $duration, $function);
 
+  @media screen and (min-width: 768px) {
+    @include link(14px, 1.14);
+    padding: 32px 0;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -17,7 +22,9 @@
 }
 
 .contacts {
-  margin-bottom: 38px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
 }
 
 .link__contacts {
@@ -29,13 +36,27 @@
   color: $current-text-color;
   @include transition(color, $duration, $function);
 
+  @media screen and (min-width: 768px) {
+    @include link(14px, 1.14);
+    padding: 21px 0 5px 0;
+
+    display: flex;
+    align-items: center;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;
   }
 
   &.mail {
-    @include link(24px, 1.17);
+    @media screen and (max-width: 767px) {
+      @include link(24px, 1.17);
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 5px 0 21px 0;
+    }
   }
 }
 
