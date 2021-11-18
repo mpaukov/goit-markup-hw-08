@@ -76,10 +76,10 @@
     transition: fill $duration $function;
   }
 
-  .modal__input:focus-visible + &,
-  .modal__input:focus + &,
-  .modal__textarea:focus-visible + &,
-  .modal__textarea:focus + & {
+  .form__input:focus-visible + &,
+  .form__input:focus + &,
+  .form__textarea:focus-visible + &,
+  .form__textarea:focus + & {
     fill: $accent-color;
   }
 }
@@ -97,13 +97,13 @@
     transition-duration: $duration;
     transition-timing-function: $function;
 
-    .modal__checkbox:checked + & {
+    .form__checkbox:checked + & {
       border: 2px solid transparent;
       background-color: $accent-color;
     }
 
-    .modal__label:last-of-type:hover > &,
-    .modal__label:last-of-type:focus-within > & {
+    .form__label:last-of-type:hover > &,
+    .form__label:last-of-type:focus-within > & {
       border: 2px solid $accent-color;
     }
   }

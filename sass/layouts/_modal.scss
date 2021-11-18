@@ -1,0 +1,62 @@
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+
+  background-color: $backdrop-overlay-color;
+
+  visibility: visible;
+  transition: visibility $duration $function;
+
+  &.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 450px;
+  min-height: 609px;
+  padding: 40px;
+
+  background: $current-light-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  opacity: 1;
+
+  transition-property: opacity, transform;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+
+  .is-hidden > & {
+    opacity: 0;
+
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+.modal__heading {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $current-title-color;
+}
+
+.modal__link {
+  color: $accent-color;
+}

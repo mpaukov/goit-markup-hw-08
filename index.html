@@ -482,8 +482,67 @@
           </form>
         </div>
       </footer>
+
+       <div class="modal__backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button__modal" data-modal-close>
+          <svg class="icon__close">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <form>
+          <p class="modal__heading">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form__label"
+            ><span class="form__text">Имя</span>
+            <input class="form__input" type="text" name="name" />
+            <svg class="icon__modal icon__modal--position">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </label>
+          <label class="form__label"
+            ><span class="form__text">Телефон</span>
+            <input class="form__input" type="tel" name="phone" />
+            <svg class="icon__modal icon__modal--position">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </label>
+          <label class="form__label"
+            ><span class="form__text">Почта</span>
+            <input class="form__input" type="email" name="email" />
+            <svg class="icon__modal icon__modal--position">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </label>
+          <label class="form__label">
+            <span class="form__text">Комментарий</span>
+
+            <textarea
+              class="form__textarea"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <label class="form__label">
+            <input
+              class="form__checkbox hidden"
+              type="checkbox"
+              name="agreement"
+            />
+            <svg class="icon__check icon__check--state">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <span class="form__agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="modal__link" href="">Условия договора</a></span
+            >
+          </label>
+          <button class="button__send" type="submit">Отправить</button>
+        </form>
+      </div>
     </main>
     <script src="./js/header.js"></script>
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
