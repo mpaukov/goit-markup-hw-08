@@ -17,11 +17,19 @@
       padding: 26px 0;
       margin-right: 80px;
     }
+
+    @media screen and(min-width:1200px) {
+      margin-right: 100px;
+    }
   }
 
   &--footer {
     padding: 10px;
     color: $current-light-color;
+
+    @media screen and(min-width:1200px) {
+      padding: 10px 0;
+    }
   }
 
   &:hover.logo--header,

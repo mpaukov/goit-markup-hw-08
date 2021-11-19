@@ -15,6 +15,9 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  @media screen and(min-width: 1200px) {
+    padding: 5px 0;
+  }
 }
 
 .footer__link {
@@ -28,6 +31,10 @@
 
   transition: color $duration $function;
 
+  @media screen and(min-width:1200px) {
+    padding: 5px 0;
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -36,6 +43,14 @@
 
 .footer__thumb {
   margin-bottom: 60px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
+    margin-right: 70px;
+
+    &--social {
+      margin-right: 93px;
+    }
+  }
 }
 
 .footer__text {
@@ -55,5 +70,9 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+  }
+
+  @media screen and(min-width:1200px) {
+    text-align: left;
   }
 }

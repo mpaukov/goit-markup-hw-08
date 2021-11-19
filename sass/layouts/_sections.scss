@@ -10,4 +10,14 @@
     background-color: $thumb-background-color;
     text-align: center;
   }
+
+  &__about {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
+  }
 }

@@ -29,10 +29,15 @@
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
+
+  @media screen and(min-width:1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .portfolio-card__aside {
   position: relative;
+
   height: auto;
   overflow: hidden;
 }
