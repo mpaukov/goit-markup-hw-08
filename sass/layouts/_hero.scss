@@ -6,33 +6,55 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media screen and(min-width:1200px) {
+    min-height: 600px;
+  }
+
   background-color: $minor-background-color;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url('../images/hero-mobile-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url('../images/hero-mobile-img@2x.jpg');
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
       url('../images/hero-tablet-img.jpg');
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/hero-tablet-img@2x.jpg');
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     max-width: 1200px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
       url('../images/hero-desktop-img.jpg');
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/hero-desktop-img@2x.jpg');
     }
   }
@@ -49,4 +71,9 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

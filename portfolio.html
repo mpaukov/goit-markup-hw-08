@@ -20,10 +20,14 @@
     <header class="page-header">
       <div class="container">
         <div class="menu__wrapper">
-          <a class="links logo logo--header" href="./index.html" lang="en"
-            ><span class="logo--accent">Web</span>Studio</a
+          <a class="links logo logo--header" href="./index.html" lang="en">
+            <span class="logo--accent">Web</span>Studio
+          </a>
+          <button
+            class="button__menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-          <button class="button__menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="icon__menu">
               <use href="./images/icons.svg#menu_40px"></use>
             </svg>
@@ -40,10 +44,16 @@
             <nav class="navigation">
               <ul class="lists navigation__items">
                 <li class="navigation__item">
-                  <a class="links link__navigation" href="./index.html">Студия</a>
+                  <a class="links link__navigation" href="./index.html"
+                    >Студия</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="links link__navigation is-current" href="./portfolio.html">Портфолио</a>
+                  <a
+                    class="links link__navigation is-current"
+                    href="./portfolio.html"
+                    >Портфолио</a
+                  >
                 </li>
                 <li class="navigation__item">
                   <a class="links link__navigation" href="">Контакты</a>
@@ -51,30 +61,41 @@
               </ul>
             </nav>
 
-            <div class="contacts__wrapper">
+            <div class="contacts__thumb">
               <ul class="lists contacts">
                 <li class="contacts__item">
                   <a class="links link__contacts" href="tel:+380961111111">
                     <svg class="smartphone">
                       <use href="./images/icons.svg#smartphone"></use>
                     </svg>
-                    +38 096 111 11 11</a
-                  >
+                    +38 096 111 11 11
+                  </a>
                 </li>
                 <li class="contacts__item">
-                  <a class="links link__contacts mail" href="mailto:info@devstudio.com">
+                  <a
+                    class="links link__contacts mail"
+                    href="mailto:info@devstudio.com"
+                  >
                     <svg class="envelope">
                       <use href="./images/icons.svg#envelope"></use>
                     </svg>
-                    info@devstudio.com</a
-                  >
+                    info@devstudio.com
+                  </a>
                 </li>
               </ul>
               <ul class="lists social__menu">
-                <li class="social__menu-item"><a href="" class="links link__social-menu">Instagram</a></li>
-                <li class="social__menu-item"><a href="" class="links link__social-menu">Twitter</a></li>
-                <li class="social__menu-item"><a href="" class="links link__social-menu">Facebook</a></li>
-                <li class="social__menu-item"><a href="" class="links link__social-menu">LinkedIn</a></li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Instagram</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Twitter</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Facebook</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -88,7 +109,9 @@
           <h1 class="hidden">Наше портфолио</h1>
           <ul class="lists filter">
             <li class="filter__item">
-              <button class="button__filter is-active" type="button">Все</button>
+              <button class="button__filter is-active" type="button">
+                Все
+              </button>
             </li>
             <li class="filter__item">
               <button class="button__filter" type="button">Веб-сайты</button>
@@ -110,15 +133,24 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project1-d.jpg 1x, ./images/portfolio-project1-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project1-d.jpg    1x,
+                        ./images/portfolio-project1-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project1-t.jpg 1x, ./images/portfolio-project1-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project1-t.jpg    1x,
+                        ./images/portfolio-project1-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project1-m.jpg 1x, ./images/portfolio-project1-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project1-m.jpg    1x,
+                        ./images/portfolio-project1-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
@@ -131,8 +163,10 @@
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
-                      для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
                     </p>
                   </div>
                 </div>
@@ -147,15 +181,24 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project2-d.jpg 1x, ./images/portfolio-project2-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project2-d.jpg    1x,
+                        ./images/portfolio-project2-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project2-t.jpg 1x, ./images/portfolio-project2-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project2-t.jpg    1x,
+                        ./images/portfolio-project2-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project2-m.jpg 1x, ./images/portfolio-project2-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project2-m.jpg    1x,
+                        ./images/portfolio-project2-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
@@ -168,15 +211,20 @@
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus. Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Assumenda rerum ullam nisi magnam natus earum, in exercitationem delectus quam
-                      tempore.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus. Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Assumenda
+                      rerum ullam nisi magnam natus earum, in exercitationem
+                      delectus quam tempore.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                  <h2 class="portfolio-card__title">
+                    Постер
+                    <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
                   <p class="portfolio-card__text">Дизайн</p>
                 </div>
               </a>
@@ -186,15 +234,24 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project3-d.jpg 1x, ./images/portfolio-project3-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project3-d.jpg    1x,
+                        ./images/portfolio-project3-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project3-t.jpg 1x, ./images/portfolio-project3-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project3-t.jpg    1x,
+                        ./images/portfolio-project3-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project3-m.jpg 1x, ./images/portfolio-project3-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project3-m.jpg    1x,
+                        ./images/portfolio-project3-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
@@ -207,13 +264,17 @@
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="portfolio-card__title">
+                    Ресторан
+                    <span lang="en">Seafood</span>
+                  </h2>
                   <p class="portfolio-card__text">Приложение</p>
                 </div>
               </a>
@@ -223,31 +284,48 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project4-d.jpg 1x, ./images/portfolio-project4-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project4-d.jpg    1x,
+                        ./images/portfolio-project4-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
 
                     <source
-                      srcset="./images/portfolio-project4-t.jpg 1x, ./images/portfolio-project4-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project4-t.jpg    1x,
+                        ./images/portfolio-project4-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project4-m.jpg 1x, ./images/portfolio-project4-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project4-m.jpg    1x,
+                        ./images/portfolio-project4-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
-                    <img class="images" src="./images/portfolio-project4-d.jpg" alt="Наушники" />
+                    <img
+                      class="images"
+                      src="./images/portfolio-project4-d.jpg"
+                      alt="Наушники"
+                    />
                   </picture>
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title">Проект <span lang="en">Prime</span></h2>
+                  <h2 class="portfolio-card__title">
+                    Проект
+                    <span lang="en">Prime</span>
+                  </h2>
                   <p class="portfolio-card__text">Маркетинг</p>
                 </div>
               </a>
@@ -257,15 +335,24 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project5-d.jpg 1x, ./images/portfolio-project5-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project5-d.jpg    1x,
+                        ./images/portfolio-project5-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project5-t.jpg 1x, ./images/portfolio-project5-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project5-t.jpg    1x,
+                        ./images/portfolio-project5-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project5-m.jpg 1x, ./images/portfolio-project5-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project5-m.jpg    1x,
+                        ./images/portfolio-project5-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
@@ -278,13 +365,17 @@
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title">Проект <span lang="en">Boxes</span></h2>
+                  <h2 class="portfolio-card__title">
+                    Проект
+                    <span lang="en">Boxes</span>
+                  </h2>
                   <p class="portfolio-card__text">Приложение</p>
                 </div>
               </a>
@@ -294,30 +385,46 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project6-d.jpg 1x, ./images/portfolio-project6-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project6-d.jpg    1x,
+                        ./images/portfolio-project6-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project6-t.jpg 1x, ./images/portfolio-project6-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project6-t.jpg    1x,
+                        ./images/portfolio-project6-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project6-m.jpg 1x, ./images/portfolio-project6-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project6-m.jpg    1x,
+                        ./images/portfolio-project6-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
-                    <img class="images" src="./images/portfolio-project6-d.jpg" alt="Монитор" />
+                    <img
+                      class="images"
+                      src="./images/portfolio-project6-d.jpg"
+                      alt="Монитор"
+                    />
                   </picture>
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="portfolio-card__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
               </a>
@@ -327,30 +434,47 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project7-d.jpg 1x, ./images/portfolio-project7-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project7-d.jpg    1x,
+                        ./images/portfolio-project7-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project7-t.jpg 1x, ./images/portfolio-project7-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project7-t.jpg    1x,
+                        ./images/portfolio-project7-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project7-m.jpg 1x, ./images/portfolio-project7-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project7-m.jpg    1x,
+                        ./images/portfolio-project7-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
-                    <img class="images" src="./images/portfolio-project7-d.jpg" alt="Книга в развернутом виде" />
+                    <img
+                      class="images"
+                      src="./images/portfolio-project7-d.jpg"
+                      alt="Книга в развернутом виде"
+                    />
                   </picture>
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title">Издание <span lang="en">Limited Edition</span></h2>
+                  <h2 class="portfolio-card__title">
+                    Издание
+                    <span lang="en">Limited Edition</span>
+                  </h2>
                   <p class="portfolio-card__text">Дизайн</p>
                 </div>
               </a>
@@ -360,30 +484,47 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project8-d.jpg 1x, ./images/portfolio-project8-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project8-d.jpg    1x,
+                        ./images/portfolio-project8-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project8-t.jpg 1x, ./images/portfolio-project8-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project8-t.jpg    1x,
+                        ./images/portfolio-project8-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project8-m.jpg 1x, ./images/portfolio-project8-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project8-m.jpg    1x,
+                        ./images/portfolio-project8-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
-                    <img class="images" src="./images/portfolio-project8-d.jpg" alt="Бирка с надписью: Lab El Tag" />
+                    <img
+                      class="images"
+                      src="./images/portfolio-project8-d.jpg"
+                      alt="Бирка с надписью: Lab El Tag"
+                    />
                   </picture>
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title">Проект <span lang="en">LAB</span></h2>
+                  <h2 class="portfolio-card__title">
+                    Проект
+                    <span lang="en">LAB</span>
+                  </h2>
                   <p class="portfolio-card__text">Маркетинг</p>
                 </div>
               </a>
@@ -393,15 +534,24 @@
                 <div class="portfolio-card__aside">
                   <picture>
                     <source
-                      srcset="./images/portfolio-project9-d.jpg 1x, ./images/portfolio-project9-d@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project9-d.jpg    1x,
+                        ./images/portfolio-project9-d@2x.jpg 2x
+                      "
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio-project9-t.jpg 1x, ./images/portfolio-project9-t@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project9-t.jpg    1x,
+                        ./images/portfolio-project9-t@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio-project9-m.jpg 1x, ./images/portfolio-project9-m@2x.jpg 2x"
+                      srcset="
+                        ./images/portfolio-project9-m.jpg    1x,
+                        ./images/portfolio-project9-m@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
 
@@ -414,13 +564,16 @@
 
                   <div class="overlay">
                     <p class="overlay__text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quod nobis obcaecati corrupti
-                      voluptates. Quae veniam totam harum excepturi repellendus.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__body">
-                  <h2 class="portfolio-card__title" lang="en">Growing Business</h2>
+                  <h2 class="portfolio-card__title" lang="en">
+                    Growing Business
+                  </h2>
                   <p class="portfolio-card__text">Приложение</p>
                 </div>
               </a>
@@ -435,9 +588,10 @@
         <div class="footer-tablet">
           <div class="footer__thumb">
             <!-- Лого -->
-            <a class="links logo logo--footer" href="./index.html" lang="en"
-              ><span class="logo--accent">Web</span>Studio</a
-            >
+            <a class="links logo logo--footer" href="./index.html" lang="en">
+              <span class="logo--accent">Web</span>
+              Studio
+            </a>
 
             <!-- адрес -->
             <address>
@@ -446,16 +600,21 @@
                 href="https://goo.gl/maps/VM6gPYjPhEStrqMR6"
                 target="_blank"
                 rel="noopener, nofollow, noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
               >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
 
               <!-- Почта и телефон -->
               <ul class="lists">
                 <li class="footer__item">
-                  <a class="links footer__link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+                  <a class="links footer__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a class="links footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="links footer__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -495,9 +654,14 @@
           </div>
         </div>
         <form class="js-speaker-form">
-          <label class="js-speaker-form__label"
-            ><strong class="footer__text">Подпишитесь на рассылку</strong>
-            <input class="js-speaker-form__input" type="email" name="email" placeholder="E-mail" />
+          <label class="js-speaker-form__label">
+            <strong class="footer__text">Подпишитесь на рассылку</strong>
+            <input
+              class="js-speaker-form__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
           </label>
           <button class="button__send" type="submit">
             Подписаться

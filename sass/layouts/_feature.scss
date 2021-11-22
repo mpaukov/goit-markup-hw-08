@@ -8,7 +8,7 @@
 
 .feature__item {
   @media screen and (max-width: 767px) {
-    text-align: center;
+    text-align: left;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -17,7 +17,6 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
-    text-align: left;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
@@ -45,6 +44,10 @@
   text-transform: uppercase;
 
   color: $current-title-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .feature__text {

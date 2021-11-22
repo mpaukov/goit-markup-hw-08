@@ -1,21 +1,11 @@
 .icon__menu {
   @include icon(40px, 40px);
   @include transition(color, $duration, $function);
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
 }
 
 .icon__menu-close {
   @include icon(40px, 40px);
   @include transition(color, $duration, $function);
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
 }
 
 .envelope {

@@ -1,5 +1,6 @@
 .social__menu {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 10px;
 
   @media screen and (min-width: 768px) {
@@ -8,7 +9,7 @@
 }
 
 .social__menu-item {
-  &:not(:last-child)::after {
+  & + &::before {
     content: '';
 
     border-right: 1px solid $line-social-color;

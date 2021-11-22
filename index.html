@@ -20,10 +20,14 @@
     <header class="page-header">
       <div class="container">
         <div class="menu__wrapper">
-          <a class="links logo logo--header" href="./index.html" lang="en"
-            ><span class="logo--accent">Web</span>Studio</a
+          <a class="links logo logo--header" href="./index.html" lang="en">
+            <span class="logo--accent">Web</span>Studio
+          </a>
+          <button
+            class="button__menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-          <button class="button__menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="icon__menu">
               <use href="./images/icons.svg#menu_40px"></use>
             </svg>
@@ -40,10 +44,16 @@
             <nav class="navigation">
               <ul class="lists navigation__items">
                 <li class="navigation__item">
-                  <a class="links link__navigation is-current" href="./index.html">Студия</a>
+                  <a
+                    class="links link__navigation is-current"
+                    href="./index.html"
+                    >Студия</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="links link__navigation" href="./portfolio.html">Портфолио</a>
+                  <a class="links link__navigation" href="./portfolio.html"
+                    >Портфолио</a
+                  >
                 </li>
                 <li class="navigation__item">
                   <a class="links link__navigation" href="">Контакты</a>
@@ -51,30 +61,43 @@
               </ul>
             </nav>
 
-            <ul class="lists contacts">
-              <li class="contacts__item">
-                <a class="links link__contacts" href="tel:+380961111111">
-                  <svg class="smartphone">
-                    <use href="./images/icons.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a class="links link__contacts mail" href="mailto:info@devstudio.com">
-                  <svg class="envelope">
-                    <use href="./images/icons.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="lists social__menu">
-              <li class="social__menu-item"><a href="" class="links link__social-menu">Instagram</a></li>
-              <li class="social__menu-item"><a href="" class="links link__social-menu">Twitter</a></li>
-              <li class="social__menu-item"><a href="" class="links link__social-menu">Facebook</a></li>
-              <li class="social__menu-item"><a href="" class="links link__social-menu">LinkedIn</a></li>
-            </ul>
+            <div class="contacts__thumb">
+              <ul class="lists contacts">
+                <li class="contacts__item">
+                  <a class="links link__contacts" href="tel:+380961111111">
+                    <svg class="smartphone">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="links link__contacts mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="envelope">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="lists social__menu">
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Instagram</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Twitter</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Facebook</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -85,7 +108,9 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button__hero" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button__hero" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -102,7 +127,8 @@
               </div>
               <h3 class="feature__title">Внимание к деталям</h3>
               <p class="feature__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
               </p>
             </li>
 
@@ -114,7 +140,8 @@
               </div>
               <h3 class="feature__title">Пунктуальность</h3>
               <p class="feature__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
               </p>
             </li>
 
@@ -126,7 +153,8 @@
               </div>
               <h3 class="feature__title">Планирование</h3>
               <p class="feature__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
               </p>
             </li>
 
@@ -137,7 +165,10 @@
                 </svg>
               </div>
               <h3 class="feature__title">Современные технологии</h3>
-              <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p class="feature__text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
@@ -151,7 +182,10 @@
             <li class="about__item">
               <img
                 class="images"
-                srcset="./images/about-img1.jpg 1x, ./images/about-img1@2x.jpg 2x"
+                srcset="
+                  ./images/about-img1.jpg    1x,
+                  ./images/about-img1@2x.jpg 2x
+                "
                 src="./images/about-img1.jpg"
                 alt="Руки на клавиатуре, планшет и часть монитора"
                 width="370"
@@ -163,7 +197,10 @@
             <li class="about__item">
               <img
                 class="images"
-                srcset="./images/about-img2.jpg 1x, ./images/about-img2@2x.jpg 2x"
+                srcset="
+                  ./images/about-img2.jpg    1x,
+                  ./images/about-img2@2x.jpg 2x
+                "
                 src="./images/about-img2.jpg"
                 alt="В левой руке мобильный телефон, правая рука на тачпаде ноутбука. Ноутбук, на экране которого макеты разметки для мобильного телефона"
                 width="370"
@@ -175,7 +212,10 @@
             <li class="about__item">
               <img
                 class="images"
-                srcset="./images/about-img3.jpg 1x, ./images/about-img3@2x.jpg 2x"
+                srcset="
+                  ./images/about-img3.jpg    1x,
+                  ./images/about-img3@2x.jpg 2x
+                "
                 src="./images/about-img3.jpg"
                 alt="Левая рука, в которой планшет, на экране которого цветовая палитра"
                 width="370"
@@ -196,15 +236,25 @@
             <li class="team__card">
               <picture>
                 <source
-                  srcset="./images/team-img-igor-m.jpg 1x, ./images/team-img-igor-m@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-igor-m.jpg    1x,
+                    ./images/team-img-igor-m@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-img-igor-t.jpg 1x, ./images/team-img-igor-t@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-igor-t.jpg    1x,
+                    ./images/team-img-igor-t@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
 
-                <img class="images" src="./images/team-img-igor@3x.jpg" alt="Игорь Демьяненко" />
+                <img
+                  class="images"
+                  src="./images/team-img-igor@3x.jpg"
+                  alt="Игорь Демьяненко"
+                />
               </picture>
 
               <div class="team__card-thumb">
@@ -246,15 +296,25 @@
             <li class="team__card">
               <picture>
                 <source
-                  srcset="./images/team-img-olga-m.jpg 1x, ./images/team-img-olga-m@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-olga-m.jpg    1x,
+                    ./images/team-img-olga-m@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-img-olga-t.jpg 1x, ./images/team-img-olga-t@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-olga-t.jpg    1x,
+                    ./images/team-img-olga-t@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
 
-                <img class="images" src="./images/team-img-olga@3x.jpg" alt="Ольга Репина" />
+                <img
+                  class="images"
+                  src="./images/team-img-olga@3x.jpg"
+                  alt="Ольга Репина"
+                />
               </picture>
 
               <div class="team__card-thumb">
@@ -296,15 +356,25 @@
             <li class="team__card">
               <picture>
                 <source
-                  srcset="./images/team-img-nikolay-m.jpg 1x, ./images/team-img-nikolay-m@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-nikolay-m.jpg    1x,
+                    ./images/team-img-nikolay-m@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-img-nikolay-t.jpg 1x, ./images/team-img-nikolay-t@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-nikolay-t.jpg    1x,
+                    ./images/team-img-nikolay-t@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
 
-                <img class="images" src="./images/team-img-nikolay@3x.jpg" alt="Николай Тарасов" />
+                <img
+                  class="images"
+                  src="./images/team-img-nikolay@3x.jpg"
+                  alt="Николай Тарасов"
+                />
               </picture>
 
               <div class="team__card-thumb">
@@ -346,15 +416,25 @@
             <li class="team__card">
               <picture>
                 <source
-                  srcset="./images/team-img-mikl-m.jpg 1x, ./images/team-img-mikl-m@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-mikl-m.jpg    1x,
+                    ./images/team-img-mikl-m@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-img-mikl-t.jpg 1x, ./images/team-img-mikl-t@2x.jpg 2x"
+                  srcset="
+                    ./images/team-img-mikl-t.jpg    1x,
+                    ./images/team-img-mikl-t@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
 
-                <img class="images" src="./images/team-img-mikl@3x.jpg" alt="Михаил Ермаков" />
+                <img
+                  class="images"
+                  src="./images/team-img-mikl@3x.jpg"
+                  alt="Михаил Ермаков"
+                />
               </picture>
 
               <div class="team__card-thumb">
@@ -454,9 +534,10 @@
         <div class="footer-tablet">
           <div class="footer__thumb">
             <!-- Лого -->
-            <a class="links logo logo--footer" href="./index.html" lang="en"
-              ><span class="logo--accent">Web</span>Studio</a
-            >
+            <a class="links logo logo--footer" href="./index.html" lang="en">
+              <span class="logo--accent">Web</span>
+              Studio
+            </a>
 
             <!-- адрес -->
             <address>
@@ -465,16 +546,21 @@
                 href="https://goo.gl/maps/VM6gPYjPhEStrqMR6"
                 target="_blank"
                 rel="noopener, nofollow, noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
               >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
 
               <!-- Почта и телефон -->
               <ul class="lists">
                 <li class="footer__item">
-                  <a class="links footer__link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+                  <a class="links footer__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a class="links footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="links footer__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -514,9 +600,14 @@
           </div>
         </div>
         <form class="js-speaker-form">
-          <label class="js-speaker-form__label"
-            ><strong class="footer__text">Подпишитесь на рассылку</strong>
-            <input class="js-speaker-form__input" type="email" name="email" placeholder="E-mail" />
+          <label class="js-speaker-form__label">
+            <strong class="footer__text">Подпишитесь на рассылку</strong>
+            <input
+              class="js-speaker-form__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
           </label>
           <button class="button__send" type="submit">
             Подписаться
@@ -537,22 +628,22 @@
         </button>
         <form>
           <p class="modal__heading">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="form__label"
-            ><span class="form__text">Имя</span>
+          <label class="form__label">
+            <span class="form__text">Имя</span>
             <input class="form__input" type="text" name="name" />
             <svg class="icon__modal icon__modal--position">
               <use href="./images/icons.svg#person"></use>
             </svg>
           </label>
-          <label class="form__label"
-            ><span class="form__text">Телефон</span>
+          <label class="form__label">
+            <span class="form__text">Телефон</span>
             <input class="form__input" type="tel" name="phone" />
             <svg class="icon__modal icon__modal--position">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </label>
-          <label class="form__label"
-            ><span class="form__text">Почта</span>
+          <label class="form__label">
+            <span class="form__text">Почта</span>
             <input class="form__input" type="email" name="email" />
             <svg class="icon__modal icon__modal--position">
               <use href="./images/icons.svg#email"></use>
@@ -561,17 +652,26 @@
           <label class="form__label">
             <span class="form__text">Комментарий</span>
 
-            <textarea class="form__textarea" name="comment" placeholder="Введите текст"></textarea>
+            <textarea
+              class="form__textarea"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
 
           <label class="form__label">
-            <input class="form__checkbox hidden" type="checkbox" name="agreement" />
+            <input
+              class="form__checkbox hidden"
+              type="checkbox"
+              name="agreement"
+            />
             <svg class="icon__check icon__check--state">
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
-            <span class="form__agreement"
-              >Соглашаюсь с рассылкой и принимаю <a class="modal__link" href="">Условия договора</a></span
-            >
+            <span class="form__agreement">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="modal__link" href="">Условия договора</a>
+            </span>
           </label>
           <button class="button__send" type="submit">Отправить</button>
         </form>

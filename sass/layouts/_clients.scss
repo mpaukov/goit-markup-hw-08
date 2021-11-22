@@ -1,6 +1,9 @@
 .clients__heading {
   @extend %heading;
-  margin-bottom: 30px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients {
