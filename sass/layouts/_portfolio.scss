@@ -9,8 +9,7 @@
 .portfolio-card {
   background-color: $current-light-color;
   box-shadow: none;
-  border: 1px solid $border-color;
-  border-top: none;
+
   transition: box-shadow $duration $function;
 
   @media screen and(max-width:767px) {
@@ -47,6 +46,10 @@
 .portfolio-card__body {
   border-top: 0;
   padding: 20px 24px;
+  border: 1px solid $border-color;
+  border-top: none;
+
+  flex-grow: 1;
 }
 
 .portfolio-card__title {
